@@ -1,0 +1,12 @@
+== archlinux-autodedibox
+
+Theses bash scripts are used to easily install archlinux on a dedibox (from online.net)
+
+Steps are :
+
+1) boot dedibox in rescue mode (random ubuntu...)
+2) # wget http://dl.leneveu.fr/public/archlinux-autodedibox/autochroot.sh && sh autochroot.sh
+3) # sh autoinstall.sh
+4) # sh autoconfigure.sh
+
+   => you're done !
