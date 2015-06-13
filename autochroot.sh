@@ -1,10 +1,10 @@
 # we download archlinux fs from web
-wget http://archlinux.mirrors.ovh.net/archlinux/iso/2013.08.01/arch/x86_64/root-image.fs.sfs
-unsquashfs -d /squashfs-root root-image.fs.sfs
+wget archlinux.mirrors.ovh.net/archlinux/iso/2015.06.01/arch/x86_64/airootfs.sfs
+unsquashfs -d /squashfs-root airootfs.sfs
 
 # we create temp arch system
 mkdir /arch
-mount -o loop /squashfs-root/root-image.fs /arch
+mount -o loop /squashfs-root/airootfs.img /arch
 mount -t proc none /arch/proc
 mount -t sysfs none /arch/sys
 mount -o bind /dev /arch/dev
